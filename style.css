@@ -1,0 +1,96 @@
+body{
+	background: #EBE4D1;
+	color: #E55604;
+	font-family: 'Roboto',sans-serif;/*无衬线字体*/
+	font-size:17px;
+}
+
+h1,h2,h3{font-family: 'Lora',serif;/*衬线字体*/
+}
+/*一样的内容可以直接写在一起*/
+
+h1{
+	color:#26577C;
+	font-size: 32px;/*字体大小*/
+	font-weight:800;/**/
+	letter-spacing: 10px;/*字体间距*/
+	text-transform: unpperspace;/*大小写*/
+}
+
+h2{
+	color: #26577C;
+	font-size: 24px;
+	font-weight:lighter;
+}
+
+a{
+	text-decoration: none;
+	color:#B4B4B3;
+	transition: color 0.3s ease;/*调节变色时间*/
+}
+a:hover{
+	color:yellow;/*鼠标接近带链接的文本时，文本会改变颜色*/
+	font-weight: 600;
+}
+/*两个选择颜色的网站：cooler.co和colorhunt.co*/
+/*选择字体：fonts.google.com,将链接复制到html软件，注意链接要放在引用css文件的代码之前*/
+
+
+.container{
+	width:700px;
+	margin:40px auto;
+}
+
+@media(max-width:960px){
+	.container{
+		width:700px;
+	}
+}
+@media(max-width:720px){
+	.container{
+		width:500px;
+	}
+}
+/*页面宽度小于500px时，才会执行*/
+@media (max-width:540px){ 
+	.container {
+		width:300px;
+	}
+}
+
+.card-white{
+	background-color: white;
+	padding:40px;
+	box-shadow:0px 10px 30px rgba(0,0,0,0.1);
+	border-radius: 40px;
+	margin:20px 0px;
+	text-align:center;
+}
+.img-circle{
+	border-radius:50%;
+}
+.btn-blue{
+	background-color: #26577C;
+	color:white;
+	padding:10px 15px;
+	border-radius: 40px;
+}
+.btn-blue:hover{
+	background-color: #E55604;
+	color:white;
+}
+.list-inline{
+	list-style: none;
+	padding-left: 0px;
+}
+.list-inline li{
+	display: inline;
+	padding:10px;
+}
+.list-inline a:hover{
+	font-size:50px;
+	color:#E55604;
+}
+#introduction p {
+	margin-bottom: 40px;
+}
